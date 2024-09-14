@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 252, 252);
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#registration-form, #records-display {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(19, 18, 18, 0.4);
+    padding: 20px;
+    min-width: 350px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #007bff;
+}
+
+form {
+    margin: 0;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+}
+
+form input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    vertical-align: middle; 
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.edit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.edit:hover{
+    background-color: #094bff;
+}
+
+.delete:hover{
+    background-color: #df0b20;
+}
+#records-display {
+    width: 60%;
+    overflow-y: auto;
+}
+
+.error {
+    text-align: center;
+    color: #dc3545;
+    margin: 10px 0;
+}
+
+#message{
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#submit-button{
+    width:80px;
+}

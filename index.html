@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Saurav Keshri">
+    <meta name="keywords" content="Students Registration System, Registration system for student">
+    <meta name="description" content="Student Registration System for managing student records.">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body onload="bodyload()">
+    <header>
+        <h1><i class="fa-solid fa-users"></i>&nbsp;&nbsp;Students Registration System</h1>
+    </header>
+    <div id="message"></div>
+    <main>
+        <div class="container">
+            <!-- Student Registration Form -->
+            <section id="registration-form">
+                <h2><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Student Registration Form</h2>
+                <form id="student-form">
+                    <label for="name">Student Name :</label>
+                    <input type="text" id="student-name" placeholder="Please Enter Your Name" name="name" required>
+                    
+                    <label for="student-id">Student ID :</label>
+                    <input type="text" id="student-id" placeholder="Please Enter ID" name="student-id" required>
+                    
+                    <label for="email">Email ID :</label>
+                    <input type="email" id="student-email" placeholder="Please Enter Your Email" name="email" required>
+                    
+                    <label for="contact">Contact No. :</label>
+                    <input type="text" id="student-contact" placeholder="Please Enter Your Contact Number" name="contact" pattern="[0-9]{10}" required>
+                    
+                    <button id="submit-button" onclick="handleClick(event)">Add</button>
+                    <input type="hidden" id="edit-id">
+                </form>
+            </section>
+            <section id="records-display">
+                <h2><i class="fa-solid fa-users"></i>&nbsp;&nbsp;Registered Students</h2>
+                <!-- Registered Students table will be listed here -->
+                <table id="student-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Student ID</th>
+                            <th>Email ID</th>
+                            <th>Contact No.</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Here student record will be added dynamically through Javascript -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <script src="index.js" defer></script>
+</body>
+</html>
